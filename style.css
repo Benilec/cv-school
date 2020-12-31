@@ -32,27 +32,47 @@ header {
 }
 
 main {
-    height: 400px;
+    height: 500px;
     display: flex;
+}
+
+main p {
+    font-size: 35px;
+    font-style: oblique;
 }
 
 .section1 {
     background-color: lightblue;
     justify-content: flex-start;
-    height: 400px;
+    height: 500px;
     width: 50%;
+
+}
+.section1 h2 {
+    font-size: 70px;
+}
+
+.info {
+font-size: 25px;
+width: 250px;
+margin: 35px;
 }
 
 #selfie {
     width: 15%;
     border-radius: 99999px;
+    margin: 50px;
 }
 
 .section2 {
     background-color: rgb(201, 196, 146);
     justify-content: flex-end;
-    height: 400px;
+    height: 500px;
     width: 50%;
+}
+
+ul {
+    font-size: 20px;
 }
 
 footer {
