@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+body {
+   background-color: rgb(246, 246, 246);
+}
+
+header {
+    background-image:url(./image/sky.png) ;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 55% 45% ;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: 
+    ". celine"
+    ". benilec";
+}
+
+.celine {
+    grid-area: celine;
+    font-size: 26px;
+    display: grid;
+    align-items: flex-end;
+}
+
+.benilec {
+    grid-area: benilec;
+    font-size: 18px;
+    font-style: italic;
+}
+
+main {
+    height: 400px;
+    display: flex;
+}
+
+.section1 {
+    background-color: lightblue;
+    justify-content: flex-start;
+    height: 400px;
+    width: 50%;
+}
+
+#selfie {
+    width: 15%;
+    border-radius: 99999px;
+}
+
+.section2 {
+    background-color: rgb(201, 196, 146);
+    justify-content: flex-end;
+    height: 400px;
+    width: 50%;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.356);
+    margin: 15px;
+}
+
+.footer p {
+    padding: 0 25px;
+}
+
+.footer a {
+    color: rgba(0, 0, 0, 0.356);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+    #selfie {
+        width: 30%;
+    } 
+    .section1 {
+    flex: 100%;
+    }
+}
