@@ -34,6 +34,7 @@ header {
 main {
     height: 500px;
     display: flex;
+    margin: 20px;
 }
 
 main p {
@@ -42,37 +43,76 @@ main p {
 }
 
 .section1 {
-    background-color: lightblue;
-    justify-content: flex-start;
     height: 500px;
     width: 50%;
-
+    display: grid;
+    grid-template-rows: 30% 10% 60%;
+    grid-template-areas: 
+    "namn"
+    "om-mig"
+    "info";
 }
-.section1 h2 {
+
+.section1 .namn {
     font-size: 70px;
+    grid-area: namn;
+    text-align: center;
+    margin: 15px;
+}
+
+.om-mig {
+    grid-area: om-mig;
+    justify-self: center;
 }
 
 .info {
-font-size: 25px;
-width: 250px;
-margin: 35px;
-}
+    font-size: 22px;
+    width: 250px;
+    grid-area: info;
+    justify-self: left;
+    justify-self: center;
+}   
 
 #selfie {
+    grid-area: namn;
+    margin: 10px;
     width: 15%;
     border-radius: 99999px;
-    margin: 50px;
 }
 
 .section2 {
-    background-color: rgb(201, 196, 146);
-    justify-content: flex-end;
     height: 500px;
     width: 50%;
+    display: grid;
+    grid-template-rows: 30% 10% 60%;
+    grid-template-areas: 
+    "button"
+    "friends"
+    "list";
+}
+
+.button {
+    grid-area: button;
+    padding: 10px 25px;
+    font-size: 25px;
+    justify-self: center;
+    align-self: center;
+    background: rgba(82, 82, 82, 0);
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    box-shadow: 1px 1px 6px 1px gray;
+}
+
+.friends {
+    grid-area: friends;
+    justify-self: center;
 }
 
 ul {
-    font-size: 20px;
+    justify-self: center;
+    font-size: 25px;
+    grid-area: list;
 }
 
 footer {
@@ -104,3 +144,4 @@ footer {
     flex: 100%;
     }
 }
+
