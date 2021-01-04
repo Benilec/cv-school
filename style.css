@@ -20,7 +20,7 @@ header {
 
 .celine {
     grid-area: celine;
-    font-size: 26px;
+    font-size: 30px;
     display: grid;
     align-items: flex-end;
 }
@@ -34,7 +34,7 @@ header {
 main {
     height: 500px;
     display: flex;
-    margin: 20px;
+    margin: 0 150px 0 150px;
 }
 
 main p {
@@ -53,29 +53,36 @@ main p {
     "info";
 }
 
-.section1 .namn {
-    font-size: 70px;
+.namn {
     grid-area: namn;
-    text-align: center;
-    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgba(39, 39, 39, 0.81);
+}
+
+.namn img {
+    margin-right: 20px;
 }
 
 .om-mig {
     grid-area: om-mig;
     justify-self: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 35px;
 }
 
 .info {
+    grid-area: info;
     font-size: 22px;
     width: 250px;
-    grid-area: info;
-    justify-self: left;
     justify-self: center;
 }   
 
 #selfie {
     grid-area: namn;
-    margin: 10px;
     width: 15%;
     border-radius: 99999px;
 }
@@ -93,20 +100,23 @@ main p {
 
 .button {
     grid-area: button;
-    padding: 10px 25px;
-    font-size: 25px;
-    justify-self: center;
-    align-self: center;
     background: rgba(82, 82, 82, 0);
+    font-size: 25px;
+    box-shadow: 1px 1px 6px 1px gray;
+    text-decoration: none;
     width: fit-content;
     height: fit-content;
-    text-decoration: none;
-    box-shadow: 1px 1px 6px 1px gray;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 25px;
 }
 
 .friends {
     grid-area: friends;
     justify-self: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 35px;
 }
 
 ul {
@@ -144,4 +154,3 @@ footer {
     flex: 100%;
     }
 }
-
